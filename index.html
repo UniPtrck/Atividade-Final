@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Principal</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            background-color: whitesmoke;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 16px;
+        }
+
+        header > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .paginas {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Courier, monospace;
+        }
+
+        .paginas:hover {
+            color: hsl(207, 44%, 50%);
+        }
+
+        #apresentacao {
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        #apresentacao > img {
+            width: 160px;
+            border-radius: 100%;
+        }
+
+        #apresentacao > div > h2 {
+            font-family: Courier, monospace;
+            font-size: 16px;
+        }
+
+        #botao {
+            text-align: center;
+        }
+
+        button {
+            background-color: #222;
+            color: white;
+            border:0px;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: hsl(207, 44%, 50%);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+
+    <h1>Meu Portifólio</h1>
+
+    <div>
+        <a id="pagina" class="paginas" href="http://127.0.0.1:5501/index.html">Principal</a>
+        <a class="paginas" href="http://127.0.0.1:5501/sobremim.html">Sobre Mim</a>
+        <a class="paginas" href="http://127.0.0.1:5501/projetos.html">Projetos</a>
+    </div>
+
+</header>
+<main>
+
+    <div id="apresentacao">
+        <img src="image.jpeg" alt="foto">
+
+        <div>
+            <h2>- Prazer, eu sou</h2>
+            <h1>Nicholas Patrick</h1>
+            <h2>Programador e Aluno de ENSW</h2>
+        </div>
+    </div>
+
+    <div id="botao">
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+        <p id="mensagem"></p>
+    </div>
+
+</main>
+<footer>
+
+    <p>© 2026 - Meu Portfólio</p>
+    <p>Desenvolvido por Nicholas Patrick Lopes</p>
+
+</footer>
+<script src="script.js"></script>   
+</body>
+</html>
